@@ -1,0 +1,59 @@
+﻿/* Slide show css */
+.slider-relative {
+    position: relative;
+    overflow: hidden;
+    background: #fff; /* White */
+}
+
+.items {
+	display: none;	
+	overflow: hidden;
+}
+
+.slider-block {
+	position:relative;
+	height: 578px;
+	margin: 0 auto;
+	
+}
+.slider {
+	z-index:2;
+	overflow: visible !important;
+	height: 578px;
+	position: absolute;
+	left: 50%;
+	margin-left: -626px;
+	width: 1252px;
+}
+
+/************ Slider Selection ***********/
+
+.pagination {
+bottom: 14px;
+position: absolute;
+right: 157px;
+z-index: 999;
+}
+
+.pagination li {
+	float: left;
+}
+
+.pagination li+li {
+	margin-left: 4px;
+}
+
+/* The seqeunce of circles bottom right corner on the slide show */
+.pagination  li a{
+	width: 15px;
+	display: block;
+		transition: 0s ease;
+	-o-transition: 0s ease;
+	-webkit-transition: 0s ease;
+	height: 15px;
+	background: url(../images/prinsloo_pagination.png) right 0 no-repeat;
+}
+
+.pagination li a:hover, .pagination li.current a {
+	background-position: 0 0;
+}

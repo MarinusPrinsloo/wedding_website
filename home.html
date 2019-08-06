@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Marinus &amp; Nicole | Home</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.1.1.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/jquery.equalheights.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/tms-0.4.1.js"></script>
+
+    <!-- Automatic Slideshow - Change image every 3 seconds -->
+    <script>$(window).load(function () {
+            $('.slider')._TMS({
+                show: 0,
+                pauseOnHover: false,
+                prevBu: '.prev',
+                nextBu: '.next',
+                playBu: false,
+                duration: 800,
+                preset: 'fade',
+                pagination: true, //'.pagination',true,'<ul></ul>'
+                pagNums: false,
+                slideshow: 8000,
+                numStatus: false,
+                banners: false,
+                waitBannerAnimation: false,
+                progressBar: false
+            })
+        });</script>
+
+    <!--  Count Down Timer  -->
+    <script>// Set the date we're counting down to
+        var countDownDate = new Date("June 5, 2020 15:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="timer"
+            document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+
+            // If the count down is over, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("timer").innerHTML = "THE WEDDING IS STARTING! <br /> IF YOU ARE ON THE WEBSITE YOU ARE LATE!!!";
+            }
+        }, 1000);</script>
+
+    <style>
+
+        /* Background image Home Page */
+        .Home {
+            background-image: url("Tollymore-Forest-Bridge-site.jpg");
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            color: white;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 25px;
+        }
+    </style>
+
+</head>
+<body  class="page1">
+<header>
+  <div class="container_12">
+      <div class="grid_12">
+
+          <div class="topleft">
+              <p> 5 June 2020</p>
+          </div>
+
+          <div class="topright">
+              <p> #PrinslooTroue</p>
+          </div>
+
+          <div class="topmiddel">
+              <p> Nicole & Marinus</p>
+          </div>
+
+          <div class="menu_block">
+
+              <!-- Navigation Page -->
+              <nav>
+                  <ul class="sf-menu">
+                      <li class="current"><a href="home.html">Home</a></li>
+                      <li><a href="index.html">Index</a></li>
+                      <li><a href="about-us.html">About Us</a></li>
+                      <li><a href="weddings.html">Weddings</a></li>
+                      <li><a href="photo-album.html">Photo Album</a></li>
+                      <li><a href="song-request.html">Song Request</a></li>
+                      <li><a href="accommodation.html">Accommodation</a></li>
+                      <li><a href="contact-us.html">Contact Us</a></li>
+                  </ul>
+              </nav>
+              <div class="clear"></div>
+          </div>
+          <div class="clear"></div>
+      </div>
+  </div>
+</header>
+<div class="top_block">
+  <div class="slider-relative">
+      <div class="slider-block">
+
+
+          <div class="Home">
+              <div class="middle">
+                  <h1>WE'RE GETTING <br /> MARRIED!</h1>
+                  <hr>
+                  <p id="timer" style="font-size: 60px"></p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="socials"> <a href="#"></a> <a href="#"></a> <a href="#"></a> </div>
+      <p><a href="home.html" class="footer_logo"><img src="images/prinsloo_footer_logo.png"  alt=""></a> &copy; 2020 | <a href="#">Privacy Policy</a> | Design by: Marinus Prinsloo</></p>
+    </div>
+    <div class="clear"></div>
+  </div>
+</footer>
+</body>
+</html>
